@@ -1,65 +1,125 @@
-import Image from "next/image";
+import React from "react";
+import Container from "../Components/Container";
 
-export default function Home() {
+import Image from "next/image";
+import SmartBoartDetails from "../Components/SmartBoard/SmartBoartDetails";
+import OperatingSystem from "../Components/SmartBoard/OperatingSystem";
+import Connectivity from "../Components/SmartBoard/Connectivity";
+import Accessories from "../Components/SmartBoard/Accessories";
+import Functionality from "../Components/SmartBoard/Functionality";
+import Pricing from "../Components/SmartBoard/Pricing";
+
+export const metadata = {
+  title: "Master Sab | Smartboard",
+  description: "Smartboard",
+};
+
+const HomePage = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="relative">
+      <div className=" ">
+        <div className="bg-cover flex  justify-center  bg-center h-[50vh] md:h-[767px] w-full bg-[url('/smartboard/backgroundpicture.jpg')]">
+          <div className="flex  flex-col items-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              className="md:pt-44 pt-20 md:max-w-[297px] max-w-[150px] w-full text-white"
+              src="/smartboard/logo.png"
+              height={106}
+              width={297}
+              alt="LOGO"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <h1 className="md:text-[60px] text-2xl text-white text-center font-fasterOne ">
+              Interactive Touchscreen Boards
+            </h1>
+          </div>
         </div>
-      </main>
+        <div className="relative">
+          <div className="flex justify-center">
+            <Image
+              className="object-cover w-screen absolute -top-[30%] -z-50 h-[3150px] blur-lg"
+              src="/backgroundwave/blur_background1.png"
+              width={1440}
+              height={2340}
+              alt="blurbg1"
+              //
+            />
+
+            <Image
+              className="object-contain md:object-cover w-screen absolute -top-[30%] -z-50 h-[2340px]"
+              src="/backgroundwave/bg1.png"
+              width={1440}
+              height={2340}
+              alt="Wavenumber1"
+              // fill
+            />
+
+            <Image
+              className="object-contain md:object-cover w-screen absolute top-[40%] -z-50 h-[2340px]"
+              src="/backgroundwave/bg2.png"
+              width={1440}
+              height={2340}
+              alt="bg2"
+              //
+            />
+          </div>
+          <SmartBoartDetails />
+          <OperatingSystem />
+          <Connectivity />
+        </div>
+
+        <div className="relative pb-40">
+          <Image
+            className="object-contain md:object-cover w-screen absolute -top-[30%] -z-50 h-[2340px]"
+            src="/backgroundwave/bg3.png"
+            width={1440}
+            height={2340}
+            alt="Wavenumber1"
+            // fill
+          />
+          <Image
+            className="object-contain md:object-cover w-screen absolute bottom-0 -z-50 h-[2340px]"
+            src="/backgroundwave/bg4.png"
+            width={1440}
+            height={2340}
+            alt="Wavenumber1"
+            // fill
+          />
+
+          <Image
+            className="object-cover w-screen absolute bottom-0 -z-50 h-[3150px] blur-lg"
+            src="/backgroundwave/blur_background2.png"
+            width={1440}
+            height={2340}
+            alt="blurbg1"
+            //
+          />
+          <Container>
+            <div className="flex flex-col items-center justify-center">
+              <div className="pt-32 flex items-center justify-center">
+                <Image
+                  src="/smartboard/4th_Section.png"
+                  width={980}
+                  height={1020}
+                  alt="section4"
+                />
+              </div>
+              <div className="mt-20">
+                <Image
+                  src="/smartboard/5th_Section.png"
+                  width={980}
+                  height={1020}
+                  alt="section4"
+                />
+              </div>
+            </div>
+
+            <Accessories />
+            <Functionality />
+            <Pricing />
+          </Container>
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default HomePage;
