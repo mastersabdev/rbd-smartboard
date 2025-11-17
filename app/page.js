@@ -10,8 +10,8 @@ import Pricing from "@/components/smartboard/Pricing";
 import Container from "@/components/Container";
 
 export const metadata = {
-  title: "Master Sab | Smartboard",
-  description: "Smartboard",
+  title: "RBD Smartboard",
+  description: "All-in-one interactive touchscreen board with 4K display, multi-touch, and robust OS options.\nSeamless connectivity, rich accessories, and smart tools to elevate classrooms and meetings.",
 };
 
 const HomePage = () => {
