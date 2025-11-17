@@ -59,6 +59,24 @@ const Pricing = () => {
           </span>
         </div>
       </Link>
+
+      <Link
+        className="fixed bottom-10 left-1 md:bottom-16 md:left-6 z-50 flex items-center md:gap-3 gap-1 bg-[#b7151d] hover:bg-[#850108] text-white px-2 py-1 md:px-6 md:py-3 rounded-full shadow-lg transition-transform transform hover:scale-105"
+        href="/RBD-smartboard-spec.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg className="w-8 h-8 md:w-11 md:h-11" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"/>
+          <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z"/>
+        </svg>
+        <div className="flex flex-col leading-tight">
+          <span className="text-xs md:text-base font-bold">Download</span>
+          <span className="text-[10px] md:text-sm font-light">
+            Spec Sheet
+          </span>
+        </div>
+      </Link>
     </div>
   );
 };
