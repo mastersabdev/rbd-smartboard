@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "../Components/Container";
 
 import Image from "next/image";
 import SmartBoartDetails from "@/components/smartboard/SmartBoartDetails";
@@ -8,6 +7,7 @@ import Connectivity from "@/components/smartboard/Connectivity";
 import Accessories from "@/components/smartboard/Accessories";
 import Functionality from "@/components/smartboard/Functionality";
 import Pricing from "@/components/smartboard/Pricing";
+import Container from "@/components/Container";
 
 export const metadata = {
   title: "Master Sab | Smartboard",
